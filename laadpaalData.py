@@ -6,7 +6,7 @@ import GeodataEnCars as gc
 
 def laadpaal():
     ## DATA INLADEN ##
-    laaddata = pd.read_csv("C:\\Users\\oscar\\Downloads\\DATASCIENCE\\Case3 Laadpaal\\laadpaaldata.csv")
+    laaddata = pd.read_csv("laadpaaldata.csv")
     
     st.set_page_config(layout="wide")
     st.title("⚡Laadpaal Statistieken")
@@ -207,4 +207,5 @@ def laadpaal():
             fig_MP.update_layout(yaxis=dict(range=[0,None]))
             st.plotly_chart(fig_MP, use_container_width=True)
         
+
         corr_heat('LPHeatmap2')
